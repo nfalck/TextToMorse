@@ -24,7 +24,7 @@ def decode(start_text):
             capitalize = False
         else:
             result_text += letter.lower()
-        if letter == ".":
+        if letter == "." or letter == "!" or letter == "?":
             capitalize = True
             continue
     return result_text
